@@ -1,66 +1,59 @@
----
-layout: base
-title: "Pepijn Hinten"
-description: "Minimalist one‑pager with a simple blog"
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pepijn Hinten</title>
 
-<!-- Home / Hero -->
-<section id="home" class="hero">
-  <h1>Minimalist one‑pager with a blog</h1>
-  <p class="lead">Clean. Fast. Focused. Built with GitHub Pages + Jekyll. Easy to update with text and pictures.</p>
-</section>
+  <style>
+    /* ===== Global Styles ===== */
+    body {
+      margin: 0;
+      height: 100vh;
+      background: #000;
+      color: #fff;
+      font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
 
-<!-- About -->
-<section id="about">
-  <h2>About</h2>
-  <p>
-    I’m Pepijn Hinten. I like simple, well‑organized tools and clear writing.
-    This site is a single page with a lightweight blog — no build steps, no extra tools.
-  </p>
-</section>
+    /* ===== Typography ===== */
+    h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin: 0 0 .6rem 0;
+    }
 
-<!-- Work -->
-<section id="work">
-  <h2>Work</h2>
-  <div class="cards">
-    <div class="card">
-      <h3>Project A</h3>
-      <p>Short one‑line description of what it is and the value.</p>
-    </div>
-    <div class="card">
-      <h3>Project B</h3>
-      <p>Another succinct description. Link to repo/website if relevant.</p>
-    </div>
-    <div class="card">
-      <h3>Foundation</h3>
-      <p>Brief note about your foundation or current focus.</p>
-    </div>
-  </div>
-</section>
+    p {
+      font-size: 1.3rem;
+      opacity: 0.85;
+      margin: 0.4rem 0 1.2rem 0;
+    }
 
-<!-- Blog (auto list of posts) -->
-<section id="blog">
-  <h2>Blog</h2>
-  <div class="blog-list">
-    {% for post in site.posts %}
-      <article class="post-item">
-        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        <div class="post-meta">
-          {{ post.date | date: "%B %d, %Y" }}
-          {% if post.description %} — {{ post.description }}{% endif %}
-        </div>
-      </article>
-    {% else %}
-      <p class="lead">No posts yet. Your first one is below as an example.</p>
-    {% endfor %}
-  </div>
-</section>
+    a {
+      font-size: 1.4rem;
+      color: #ffb347;
+      text-decoration: none;
+      font-weight: 500;
+      border-bottom: 1px solid transparent;
+      transition: 0.2s ease;
+    }
 
-<!-- Contact -->
-<section id="contact">
-  <h2>Contact</h2>
-  <p>
-    You can reach me at <a href="mailto:hello@example.com">hello@example.com</a>.
-    Or find me on <a href="https://github.com/pepijnhinten">GitHub</a>.
-  </p>
-</section>
+    a:hover {
+      border-bottom: 1px solid #ffb347;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Pepijn Hinten</h1>
+  <p>If you want to contact me:</p>
+  mailto:hello@example.comhello@example.com</a>
+
+</body>
+</html>
