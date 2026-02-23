@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>{{ page.title | default: site.title }}</title>
   <meta name="description" content="{{ page.description | default: site.description }}">
-  {{ 
+  
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
 </head>
 
 <body>
@@ -13,11 +14,7 @@
     <nav>
       <div class="brand">{{ site.title }}</div>
       <div class="links">
-        #homeHome</a>
-        #aboutAbout</a>
-        #workWork</a>
-        #blogBlog</a>
-        #contactContact</a>
+        <a href="#home        #contactContact</a>
       </div>
     </nav>
   </header>
