@@ -1,1 +1,17 @@
+title: "Pepijn Hinten"
+description: "Minimalist one‑pager with a simple blog"
+url: "https://pepijnhinten.github.io"
 
+# Use our own CSS/layouts (no theme)
+theme: null
+
+# Markdown processor
+markdown: kramdown
+kramdown:
+  input: GFM
+
+# Blog URLs like /blog/hello-world/
+permalink: /blog/:title/
+
+# Optional: control where excerpts cut off (use <!--more--> in posts)
+excerpt_separator: "<!--more-->"
