@@ -1,11 +1,21 @@
 ---
+layout: post
 title: "Hello, world"
 description: "First post on my minimalist one‑pager"
+date: 2026-02-23
 ---
 
-This is my first blog post. Posts are simple Markdown files placed in the `_posts` folder,
-named `YYYY-MM-DD-title.md`. GitHub Pages (Jekyll) turns them into pages automatically.
+Welcome to my blog — posts are simple Markdown files.  
+Updating is as easy as writing text and dropping pictures in the repo.
 
-- Write in plain Markdown
-- Use code blocks, lists, and images
-- The list on the homepage updates automatically
+<!--more-->
+
+## A picture
+
+Upload your image to `assets/img/` and reference it like this:
+
+![Sunrise in Deventer](/assets/img/sunrise-deventer.jpg)
+
+You can also control size with HTML if you prefer:
+
+<img src="/assets/img/sunrise-deventer.jpg" alt="Sunrise in Deventer" width="640" />
