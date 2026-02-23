@@ -1,0 +1,78 @@
+:root {
+  --bg: #0e0e10;
+  --fg: #f4f4f6;
+  --muted: #b8b8c2;
+  --accent: #ffb347;  /* soft amber */
+  --card: #16161a;
+  --maxw: 820px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0; background: var(--bg); color: var(--fg);
+  font: 16px/1.65 system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+header {
+  position: sticky; top: 0;
+  backdrop-filter: blur(8px);
+  background: rgba(14, 14, 16, 0.8);
+  border-bottom: 1px solid #22222a;
+  z-index: 10;
+}
+nav {
+  max-width: var(--maxw); margin: 0 auto; padding: 12px 20px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+nav .brand { font-weight: 700; letter-spacing: .2px; }
+nav a { color: var(--fg); text-decoration: none; margin-left: 18px; opacity: .9; }
+nav a:hover { color: var(--accent); }
+
+main { max-width: var(--maxw); margin: 0 auto; padding: 48px 20px 80px; }
+
+section { padding: 64px 0; border-bottom: 1px solid #22222a; }
+section:last-of-type { border-bottom: 0; }
+h1,h2,h3 { margin: 0 0 10px; }
+h1 { font-size: clamp(32px, 6vw, 44px); }
+h2 { font-size: 24px; margin-bottom: 12px; }
+p { margin: 8px 0 0; color: var(--fg); }
+.lead { color: var(--muted); }
+
+.hero { padding: 80px 0 48px; display: grid; gap: 8px; }
+
+.cards {
+  display: grid; gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  margin-top: 16px;
+}
+.card {
+  background: var(--card); padding: 16px; border-radius: 10px;
+  border: 1px solid #22222a;
+}
+.card h3 { margin: 0 0 6px; font-size: 18px; }
+.card p { margin: 0; color: var(--muted); }
+
+.blog-list { display: grid; gap: 16px; margin-top: 12px; }
+.post-item {
+  padding: 16px; border-radius: 10px; border: 1px solid #22222a; background: var(--card);
+}
+.post-item a { color: var(--fg); text-decoration: none; font-weight: 600; }
+.post-item a:hover { color: var(--accent); }
+.post-meta { color: var(--muted); font-size: 0.95rem; margin-top: 4px; }
+
+.post-content img,
+.post-content video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 14px auto;
+  border-radius: 8px;
+  border: 1px solid #22222a;
+}
+
+footer {
+  max-width: var(--maxw); margin: 0 auto; padding: 36px 20px 80px; color: var(--muted);
+  display: flex; justify-content: space-between; align-items: center;
+}
+footer a { color: var(--accent); text-decoration: none; }
