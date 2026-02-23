@@ -14,8 +14,8 @@ Updating is as easy as writing text and dropping pictures in the repo.
 
 Upload your image to `assets/img/` and reference it like this:
 
-![Sunrise in Deventer](/assets/img/sunrise-deventer.jpg)
+![Sunrise in Deventer](assets/img/Mipham.jpg)
 
 You can also control size with HTML if you prefer:
 
-<img src="/assets/img/sunrise-deventer.jpg" alt="Sunrise in Deventer" width="640" />
+<img src="assets/img/Mipham.jpg" alt="Mipham Rinpoche" width="640" />
