@@ -12,16 +12,19 @@ Updating is as easy as writing text and dropping pictures in the repo.
 
 ## A picture
 
-Here is the image embedded via Markdown:
+Here is the image embedded via **Markdown** (this is the correct syntax):
 
-/assets/img/Mipham.jpg
+![Mipham](/assets/img/Mipham.jpg)
 
-*Alt text example (recommended for accessibility):*
+You can also include **alt text** (recommended for accessibility):
 
-/assets/img/Mipham.jpg
+![Mipham, portrait](/assets/img/Mipham.jpg)
 
-You can also use HTML if you want to control width or add a caption:
+And here’s the **HTML** version if you want control over width and caption:
 
-/assets/img/Mipham.jpg
-
-*Figure 1. A short caption describing the image.*
+<figure style="text-align:center">
+  <img src="/assets/img/Mipham.jpg" alt="Mipham" style="max-width:100%; border-radius:8px;">
+  <figcaption style="color:#b8b8c2; font-size:.95rem; margin-top:6px;">
+    Figure 1. A short caption describing the image.
+  </figcaption>
+</figure>
