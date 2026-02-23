@@ -1,12 +1,2 @@
 title: "Pepijn Hinten"
-description: "Minimalist one‑pager with a simple blog"
-url: "https://pepijnhinten.github.io"
 
-theme: null
-
-markdown: kramdown
-kramdown:
-  input: GFM
-
-permalink: /blog/:title/
-excerpt_separator: "<!--more-->"
