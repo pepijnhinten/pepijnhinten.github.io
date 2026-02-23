@@ -5,17 +5,23 @@ description: "First post on my minimalist one‑pager"
 date: 2026-02-23
 ---
 
-Welcome to my blog — posts are simple Markdown files.  
+Welcome to my blog — posts are just simple Markdown files.  
 Updating is as easy as writing text and dropping pictures in the repo.
 
 <!--more-->
 
 ## A picture
 
-Upload your image to `assets/img/` and reference it like this:
+Here is the image embedded via Markdown:
 
-![Sunrise in Deventer](assets/img/Mipham.jpg)
+/assets/img/Mipham.jpg
 
-You can also control size with HTML if you prefer:
+*Alt text example (recommended for accessibility):*
 
-<img src="assets/img/Mipham.jpg" alt="Mipham Rinpoche" width="640" />
+/assets/img/Mipham.jpg
+
+You can also use HTML if you want to control width or add a caption:
+
+/assets/img/Mipham.jpg
+
+*Figure 1. A short caption describing the image.*
